@@ -83,12 +83,5 @@ A função `tokenize(texto)` percorre o código utilizando `re.finditer`, identi
 
 ![Print Codigo Python](Evidencias/Atv4_print.png)
 
-## Atividade 5 – Autômatos Finitos com JFLAP
-## Objetivo
+## Atividade 6
 
-Compreender o funcionamento interno de um scanner léxico, implementando e simulando autômatos finitos utilizando a ferramenta JFLAP.
-A atividade reforça a ideia de que scanners são implementados com base em autômatos finitos (DFA/NFA).
-
-🔗 Ferramenta utilizada
-JFLAP
-Tutorial oficial: https://www.jflap.org/tutorial/
