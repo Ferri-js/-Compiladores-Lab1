@@ -43,10 +43,10 @@ As atividades exploram desde o conceito de **fluxo de caracteres** até a constr
 **Extras**
 expressões regulares para validar dados reais:
 
-CPF: \d{3}\.\d{3}\.\d{3}-\d{2}
+CPF: ```\d{3}\.\d{3}\.\d{3}-\d{2}```
 
-Telefone (Brasil): \(\d{2}\)\s\d{4,5}-\d{4}
+Telefone (Brasil): ``` \(\d{2}\)\s\d{4,5}-\d{4}```
 
-E-mail: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+E-mail: ```[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}```
 
 ![Print Extras](Evidencias/CPF_print.png)
