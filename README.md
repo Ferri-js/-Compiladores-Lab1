@@ -49,4 +49,4 @@ Telefone (Brasil): \(\d{2}\)\s\d{4,5}-\d{4}
 
 E-mail: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
 
-![Print Extras](Evidencia/CPF_print.png)
+![Print Extras](Evidencias/CPF_print.png)
