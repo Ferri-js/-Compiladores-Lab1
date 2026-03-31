@@ -50,3 +50,35 @@ Telefone (Brasil): ``` \(\d{2}\)\s\d{4,5}-\d{4}```
 E-mail: ```[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}```
 
 ![Print Extras](Evidencias/CPF_print.png)
+
+## 💻 Atividade 4 – RegExp em Python e Java
+
+### 🎯 Objetivo
+
+Implementar um mini-analisador léxico (scanner) utilizando expressões regulares, demonstrando na prática como um autômato finito reconhece padrões em um fluxo de caracteres e os transforma em tokens.
+
+---
+
+## 🐍 Implementação em Python
+
+Foi desenvolvido um mini-scanner utilizando a biblioteca `re`, responsável por identificar padrões no código de entrada.
+
+### 🔹 Expressão regular utilizada
+
+```
+[a-zA-Z_][a-zA-Z0-9_]|\d+|[=+-]
+```
+
+Essa expressão representa o autômato finito, sendo capaz de reconhecer:
+
+- Identificadores (`ID`)
+- Números inteiros (`NUMBER`)
+- Operadores (`OP`)
+
+---
+
+### 🔹 Funcionamento
+
+A função `tokenize(texto)` percorre o código utilizando `re.finditer`, identificando os lexemas e classificando-os em seus respectivos tipos.
+
+![Print Codigo Python](Evidencias/Atv4_print)
