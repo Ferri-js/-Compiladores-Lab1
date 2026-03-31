@@ -83,5 +83,78 @@ A função `tokenize(texto)` percorre o código utilizando `re.finditer`, identi
 
 ![Print Codigo Python](Evidencias/Atv4_print.png)
 
-## Atividade 6
+## Atividade 6 – OpenAI Tokenizer × Tokens de Compilador
 
+### Comparação dos Tokens
+
+Foi utilizada a seguinte expressão:
+
+```
+position = initial + rate * 60
+```
+
+### Tokens do compilador (analisador léxico):
+```
+IDENT(position)
+ASSIGN(=)
+IDENT(initial)
+PLUS(+)
+IDENT(rate)
+MULT(*)
+NUMBER(60)
+```
+#### Tokens do tokenizer da OpenAI:
+```
+pos
+ition
+
+initial
++
+rate
+*
+60
+```
+---
+
+### Por que o tokenizer da OpenAI quebra "position"?
+
+O tokenizer da OpenAI utiliza o método **Byte Pair Encoding (BPE)**, que divide palavras em partes menores com base na frequência em grandes volumes de texto.
+
+Assim, a palavra:
+```
+position → pos + ition
+```
+
+é separada dessa forma porque essas partes aparecem com frequência em outros contextos.
+
+---
+
+###  Diferença Conceitual
+
+#### Token Léxico (Compilador)
+
+- Baseado em regras formais (expressões regulares)
+- Segue a gramática da linguagem
+- É determinístico e preciso
+- Cada token tem significado sintático
+
+---
+
+#### Token de LLM (OpenAI)
+
+- Baseado em estatística (BPE)
+- Não segue gramática formal
+- Focado em eficiência e compressão de texto
+- Tokens podem não ter significado isolado
+
+###  Discussão Final
+
+O analisador léxico de um compilador precisa ser extremamente preciso, pois qualquer erro pode comprometer toda a compilação do programa. Ele segue regras rígidas definidas pela gramática da linguagem.
+
+Já o tokenizer da OpenAI não precisa dessa precisão, pois seu objetivo é processar linguagem natural de forma eficiente. Ele trabalha com probabilidades e padrões, priorizando contexto em vez de exatidão sintática.
+
+---
+
+###  Conclusão
+
+O scanner de um compilador e o tokenizer de um modelo de linguagem possuem objetivos diferentes. Enquanto o compilador exige precisão absoluta para interpretar corretamente o código, o tokenizer baseado em BPE busca eficiência no processamento de texto, mesmo que isso implique dividir palavras em partes sem significado independente.
