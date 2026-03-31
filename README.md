@@ -81,4 +81,4 @@ Essa expressão representa o autômato finito, sendo capaz de reconhecer:
 
 A função `tokenize(texto)` percorre o código utilizando `re.finditer`, identificando os lexemas e classificando-os em seus respectivos tipos.
 
-![Print Codigo Python](Evidencias/Atv4_print)
+![Print Codigo Python](Evidencias/Atv4_print.png)
