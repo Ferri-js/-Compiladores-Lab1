@@ -158,3 +158,35 @@ Já o tokenizer da OpenAI não precisa dessa precisão, pois seu objetivo é pro
 ###  Conclusão
 
 O scanner de um compilador e o tokenizer de um modelo de linguagem possuem objetivos diferentes. Enquanto o compilador exige precisão absoluta para interpretar corretamente o código, o tokenizer baseado em BPE busca eficiência no processamento de texto, mesmo que isso implique dividir palavras em partes sem significado independente.
+
+##  Atividade 7 – Tokenização de Texto em Português (Scanner)
+
+###  Objetivo
+
+Desenvolver um analisador léxico (scanner) em Python e Java capaz de processar um texto em língua portuguesa e separá-lo em tokens utilizando expressões regulares.
+
+---
+
+###  Descrição da Solução
+
+O programa implementa um scanner simples que realiza a leitura de um arquivo texto e aplica uma expressão regular para identificar os seguintes elementos:
+
+- Palavras (incluindo caracteres acentuados)
+- Números inteiros
+- Sinais de pontuação
+
+A saída do programa é uma lista (vetor) de strings representando os tokens encontrados no texto.
+
+---
+
+###  Expressão Regular Utilizada
+
+```python
+r'[A-Za-zÀ-ÖØ-öø-ÿ]+|\d+|[.,!?;:]'
+```
+Essa expressão é composta por três partes:
+
+```[A-Za-zÀ-ÖØ-öø-ÿ]+ ``` reconhece palavras com ou sem acentuação
+```\d+``` reconhece números inteiros
+```[.,!?;:]``` reconhece pontuação básica
+
