@@ -51,7 +51,7 @@ E-mail: ```[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}```
 
 ![Print Extras](Evidencias/CPF_print.png)
 
-## 💻 Atividade 4 – RegExp em Python e Java
+## Atividade 4 – RegExp em Python e Java
 
 ###  Objetivo
 
@@ -82,3 +82,13 @@ Essa expressão representa o autômato finito, sendo capaz de reconhecer:
 A função `tokenize(texto)` percorre o código utilizando `re.finditer`, identificando os lexemas e classificando-os em seus respectivos tipos.
 
 ![Print Codigo Python](Evidencias/Atv4_print.png)
+
+## Atividade 5 – Autômatos Finitos com JFLAP
+## Objetivo
+
+Compreender o funcionamento interno de um scanner léxico, implementando e simulando autômatos finitos utilizando a ferramenta JFLAP.
+A atividade reforça a ideia de que scanners são implementados com base em autômatos finitos (DFA/NFA).
+
+🔗 Ferramenta utilizada
+JFLAP
+Tutorial oficial: https://www.jflap.org/tutorial/
